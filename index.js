@@ -38,7 +38,7 @@ async function insertData() {
 }
 insertData();
 //routes
-app.use(cors());
+app.use(cors({ origin: "*" }));
 app.use("/fruits", routerFruits);
 app.use("/send-email", routerEmail);
 app.use("/users", routerusers);
